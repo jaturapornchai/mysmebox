@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.pem
+*.key
+credentials*.json
+AGENTS.md

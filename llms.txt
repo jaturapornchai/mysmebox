@@ -1,0 +1,26 @@
+# MySMEBox (https://www.mysmebox.com)
+
+> **MySMEBox** คือ Open Source แพลตฟอร์มบริหารธุรกิจสำหรับ **"แม่ค้าออนไลน์ & SME 1 คน = หลายร้านค้า" (Online Seller & Multi-Shop SaaS Super-App)** ออกแบบให้ใช้งานง่ายด้วยภาษาไทยสำหรับแม่ค้าออนไลน์บนมือถือและคอมพิวเตอร์ มีปุ่ม **DEMO ทดลองเล่นฟรีทันทีโดยไม่ต้องล็อกอิน** มาพร้อมข้อมูลถาวรจากระบบกลางครบชุด (21 ธนาคารในไทยพร้อมโลโก้ + 77 จังหวัด 928 อำเภอ 7,436 ตำบล พร้อมรหัสไปรษณีย์และพิกัด GPS), ระบบแผนที่ฟรี (OpenStreetMap + Leaflet), สินค้าหลายหน่วยนับและบาร์โค้ดตามหน่วยนับ, และการเชื่อมต่อ **MCP (Model Context Protocol)** สำหรับ AI ทุกค่าย
+
+- **เว็บไซต์หลัก & ทดลองเล่น DEMO ฟรี**: https://www.mysmebox.com/
+- **Open Source GitHub Repository**: https://github.com/jaturapornchai/mysmebox
+- **MCP Endpoint (JSON-RPC 2.0)**: https://www.mysmebox.com/api/mcp
+- **เอกสารฉบับเต็มสำหรับ AI (Full Context)**: https://www.mysmebox.com/llms-full.txt
+
+## จุดเด่นสำคัญของ MySMEBox (Key Capabilities)
+
+1. **ปุ่มทดลองเล่น DEMO ทันที (ไม่ต้องผ่าน Google Login)**:
+   - กดปุ่ม DEMO หน้าเว็บเพื่อลองดูร้านค้าตัวอย่าง 3 สาขา รายการสินค้าหลายหน่วยนับ เปิดบิล ดูใบปะหน้ากล่อง แผนที่จัดส่ง และรายงานกำไร/ภาษีได้ทันที
+2. **ข้อมูลถาวรจากระบบกลางพร้อมใช้ทันที (Central Thai Master Data)**:
+   - **ธนาคารในประเทศไทย 21 แห่ง + พร้อมเพย์ & ทรูมันนี่ (`/api/master/banks`)** พร้อมโลโก้ธนาคารครบถ้วน
+   - **ข้อมูลภูมิศาสตร์ไทยครบ 100% (`/api/master/provinces`, `/api/master/geography`, `/api/master/address-search`)**: ครบทั้ง **77 จังหวัด, 928 อำเภอ/เขต, 7,436 ตำบล/แขวง** พร้อมรหัสไปรษณีย์อัตโนมัติ (`zip_code`) และพิกัด GPS (`lat`, `lng`)
+3. **ระบบแผนที่ฟรี (Free OpenStreetMap + Leaflet + Nominatim + GPS)**:
+   - ปักหมุดและติดตามตำแหน่ง **🏭 โกดัง/สาขาร้าน (`WAREHOUSE`)**, **📍 ลูกค้าประจำ/ตัวแทน (`CUSTOMER`)**, และ **🚚 จุดจัดส่งพัสดุพร้อมสถานะจัดส่ง (`DELIVERY` — ส่งแล้ว / รอเงิน COD / ขนส่งกำลังนำจ่าย)**
+4. **สินค้าหลายหน่วยนับ & บาร์โค้ดแยกตามหน่วยนับ (Multi-UOM & Barcode)**:
+   - ขายได้ทั้งขวดเดี่ยว แพ็ค หรือยกลัง ตัดสต๊อกรวมที่หน่วยฐานอัตโนมัติ พร้อมตัวสร้างรหัสบาร์โค้ดมาตรฐาน EAN-13 (`885` / `200`)
+5. **เน้นแม่ค้าออนไลน์ (Facebook Live, TikTok Shop, LINE OA, Shopee, Lazada)**:
+   - AI ดูดข้อความแชทลูกค้า CF เข้าบิลอัตโนมัติ พิมพ์ใบปะหน้ากล่องพร้อมเลขพัสดุ เช็คยอดรอโอนและยอดเก็บเงินปลายทาง (COD)
+6. **ระบบเชื่อมต่อ MCP (Model Context Protocol) + Ollama Cloud AI Co-Pilot**:
+   - เชื่อมต่อกับ Claude, Cursor, Windsurf, Antigravity หรือ AI Agent อื่นๆ ผ่าน `/api/mcp` และ `mcp-server.js`
+7. **ความแม่นยำทางการเงินระดับบัญชี (BigInt Satang Accounting)**:
+   - คำนวณเงินทุกชนิดด้วยหน่วยย่อยสตางค์ (`BigInt`) ไม่ใช้ Binary Float

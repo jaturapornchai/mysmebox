@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>MySMEBox — ระบบแม่ค้าออนไลน์ &amp; บริหารร้าน SME บนมือถือ | ดูดแชท หลายหน่วยนับ แผนที่ส่งของ กำไร &amp; AI</title>
+  <meta name="description" content="MySMEBox โปรแกรมขายของออนไลน์และบริหารร้านสำหรับแม่ค้าออนไลน์ & SME 1 คน = 1 กิจการ มีโหมด DEMO ทดลองเล่นฟรีไม่ต้องล็อกอิน รองรับดูดออเดอร์แชทด้วย AI สินค้าหลายหน่วยนับ (ปลีก/แพ็ค/ลัง) พร้อมบาร์โค้ด แผนที่จุดส่งของ/โกดังฟรี ข้อมูลธนาคารและ 77 จังหวัด-อำเภอ-ตำบลพร้อมพิกัดในตัว" />
+  <meta name="keywords" content="MySMEBox, ระบบแม่ค้าออนไลน์, โปรแกรมแม่ค้าออนไลน์, ดูดออเดอร์แชท, สินค้าหลายหน่วยนับ, บาร์โค้ดตามหน่วยนับ, พิมพ์ใบปะหน้าพัสดุ, เช็คยอด COD, โปรแกรมเปิดบิลมือถือ, ระบบสต๊อกแม่ค้าออนไลน์" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://www.mysmebox.com/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/webp" href="/logo.webp" />
+  <link rel="apple-touch-icon" href="/logo.webp" />
+
+  <!-- Open Graph (LINE / Facebook / Social Sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MySMEBox" />
+  <meta property="og:title" content="MySMEBox — ระบบช่วยแม่ค้าออนไลน์ &amp; เถ้าแก่ SME ขายไว รู้กำไรจริง ในมือถือเครื่องเดียว" />
+  <meta property="og:description" content="กดปุ่ม DEMO ทดลองเล่นฟรีได้ทันที! ดูดออเดอร์จากแชทลูกค้า ตัดสต๊อกปลีก-แพ็ค-ลังอัตโนมัติ มีรายชื่อธนาคารและตำบลทั่วไทยพร้อมแผนที่จุดส่งของฟรีในตัว" />
+  <meta property="og:url" content="https://www.mysmebox.com/" />
+  <meta property="og:image" content="https://www.mysmebox.com/og-cover.webp" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="โลโก้ MySMEBox กล่องเครื่องมือแม่ค้าออนไลน์และธุรกิจ SME" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MySMEBox — ระบบแม่ค้าออนไลน์ &amp; บริหารร้าน SME บนมือถือ" />
+  <meta name="twitter:description" content="ทดลองเล่น DEMO ฟรีไม่ต้องล็อกอิน! ดูดแชทเปิดบิล ตัดสต๊อกหลายหน่วยนับ แผนที่จุดส่งของ และผู้ช่วย AI" />
+  <meta name="twitter:image" content="https://www.mysmebox.com/og-cover.webp" />
+
+  <!-- Rich JSON-LD Structured Data (SEO + GEO/AEO Citation Ready) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.mysmebox.com/#organization",
+        "name": "MySMEBox",
+        "url": "https://www.mysmebox.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.mysmebox.com/logo.webp",
+          "width": 256,
+          "height": 256
+        },
+        "description": "แพลตฟอร์ม Open Source บริหารจัดการร้านค้าสำหรับแม่ค้าออนไลน์ และ SME 1 คน = 1 กิจการ บนมือถือครบวงจร"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.mysmebox.com/#website",
+        "url": "https://www.mysmebox.com/",
+        "name": "MySMEBox",
+        "publisher": { "@id": "https://www.mysmebox.com/#organization" },
+        "inLanguage": "th-TH"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.mysmebox.com/#software",
+        "name": "MySMEBox — ระบบบริหารร้านแม่ค้าออนไลน์ & SME 1 คน = 1 กิจการ",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "url": "https://www.mysmebox.com/",
+        "image": "https://www.mysmebox.com/og-cover.webp",
+        "description": "เว็บแอปพลิเคชันบริหารร้านค้าออนไลน์และ SME มีปุ่ม DEMO ให้ทดลองเล่นฟรีทันทีไม่ต้องล็อกอิน มาพร้อมข้อมูลธนาคารไทยครบทุกแห่ง ข้อมูล 77 จังหวัด 928 อำเภอ 7,436 ตำบลพร้อมรหัสไปรษณีย์และพิกัดแผนที่ฟรี สินค้าหลายหน่วยนับ บาร์โค้ดตามหน่วยนับ และผู้ช่วย AI",
+        "featureList": [
+          "โหมดทดลองเล่นฟรี (DEMO) ไม่ต้องล็อกอิน มีข้อมูลร้านค้า สินค้า บิลขาย แผนที่ และรายงานครบถ้วน",
+          "ระบบแม่ค้าออนไลน์ ดูดออเดอร์จากแชทลูกค้าเข้าบิลด้วย AI พิมพ์ใบปะหน้ากล่อง และเช็คยอดโอน/เก็บเงินปลายทาง (COD)",
+          "ระบบสินค้าหลายหน่วยนับ (ขายปลีกเป็นขวด / ขายยกแพ็ค / ขายยกลัง) ผูกบาร์โค้ดและราคาแยกตามหน่วยนับ",
+          "ข้อมูลพื้นฐานพร้อมใช้จากระบบกลางทันที: รายชื่อ 20 ธนาคารในไทย และ 77 จังหวัด 928 อำเภอ 7,436 ตำบล พร้อมรหัสไปรษณีย์และพิกัด GPS",
+          "ระบบแผนที่ฟรี (OpenStreetMap + Leaflet) ปักหมุดตำแหน่งลูกค้า โกดังเก็บของ และติดตามสถานะจุดจัดส่งพัสดุ",
+          "1 บัญชี Google (Gmail) สร้างแยกได้หลายเพจ/หลายร้านค้า พร้อมดึงลูกน้องช่วยตอบแชทและแพ็กของโดยไม่เห็นกำไรของร้าน",
+          "ผู้ช่วย AI แม่ค้าออนไลน์ (Ollama Cloud) ช่วยคิดสคริปต์ไลฟ์สด ทวงยอดโอน CF และสรุปภาษีส่งบัญชี"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "THB",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://www.mysmebox.com/#howto",
+        "name": "วิธีเริ่มต้นใช้งานระบบแม่ค้าออนไลน์ MySMEBox แบบง่ายที่สุดใน 3 ขั้นตอน",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "กดปุ่ม DEMO ทดลองเล่นฟรีทันที (ไม่ต้องล็อกอิน)",
+            "text": "กดปุ่มโหมด DEMO บนหน้าเว็บเพื่อดูตัวอย่างร้านค้า สินค้าหลายหน่วยนับ บิลขายออนไลน์ แผนที่ส่งของ และรายงานกำไรจริงได้ทันที"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "เลือกสินค้าหรือวางแชทลูกค้าเพื่อเปิดบิลและเลือกตำบลจัดส่ง",
+            "text": "แตะเลือกหน่วยนับสินค้า (ขวด/แพ็ค/ลัง) หรือวางข้อความแชทให้ AI แกะออเดอร์ เลือกตำบลจัดส่งเพื่อดึงรหัสไปรษณีย์และพิกัดแผนที่อัตโนมัติ"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "ดูรายงานกำไรสุทธิ เช็คยอด COD และสรุปภาษี",
+            "text": "ดูเงินสดคงเหลือจริงในมือ กำไรหักต้นทุนและค่าแอด/ค่าส่ง ติดตามพัสดุบนแผนที่ และกดดาวน์โหลดรายงานส่งบัญชีในคลิกเดียว"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mysmebox.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก MySMEBox",
+            "item": "https://www.mysmebox.com/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.mysmebox.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "อยากลองเล่นระบบ MySMEBox ต้องสมัครสมาชิกหรือล็อกอินก่อนไหม?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ไม่ต้องล็อกอินครับ สามารถกดปุ่ม 'โหมด DEMO ทดลองเล่นฟรี' บนหน้าเว็บ www.mysmebox.com เพื่อลองกดขายสินค้า ดูรายการร้านค้าหลายสาขา ดูแผนที่จุดจัดส่ง และดูรายงานกำไร/ภาษีจากข้อมูลตัวอย่างครบชุดได้ทันที"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ต้องเสียเวลาตั้งค่ารายชื่อธนาคารหรือจังหวัด-อำเภอ-ตำบลเองไหม?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ไม่ต้องตั้งค่าเองเลยครับ MySMEBox เตรียมข้อมูลถาวรไว้ให้ในระบบกลางเรียบร้อยแล้ว ทั้งรายชื่อ 20 ธนาคารในไทยพร้อมโลโก้ และข้อมูล 77 จังหวัด 928 อำเภอ 7,436 ตำบลทั่วไทยพร้อมรหัสไปรษณีย์และพิกัดแผนที่ GPS เลือกใช้งานได้ทันที"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "แม่ค้าออนไลน์ที่ขายทั้งปลีก แพ็คคู่ และยกลังให้ตัวแทน ระบบตัดสต๊อกยังไง?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ระบบเก็บสต๊อกรวมไว้ที่หน่วยย่อยที่สุด (เช่น ขวด) ที่เดียว แต่แม่ค้าตั้งปุ่มขายและบาร์โค้ดแยกตามหน่วยนับได้ เช่น ขาย 1 แพ็ค (ตัดสต๊อก 3 ขวดอัตโนมัติ) หรือขาย 1 ลัง (ตัดสต๊อก 12 ขวดอัตโนมัติ) ทำให้สต๊อกแม่นยำไม่มั่ว"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Sticky Top App Header with Instant DEMO Button + Shop Switcher -->
+  <header class="topbar">
+    <div class="topbar-inner" style="gap:8px;flex-wrap:wrap;">
+      <a href="/" class="brand-link">
+        <img src="/logo.webp" alt="โลโก้ MySMEBox ระบบแม่ค้าออนไลน์และธุรกิจ SME" width="38" height="38" class="brand-logo" />
+        <div>
+          <div class="brand-title">MySMEBox <span style="font-size:0.7rem;color:#fbbf24;font-weight:700;">แม่ค้าออนไลน์ &amp; SME</span></div>
+          <div class="brand-sub">ใช้งานง่าย · ข้อมูลไทยครบ · ฟรี Open Source</div>
+        </div>
+      </a>
+
+      <div class="inline-group" style="flex-wrap:wrap;">
+        <button type="button" class="btn btn-sm btn-emerald" onclick="enterDemoMode(false)" title="กดเพื่อโหลดข้อมูลตัวอย่างร้านค้าและสินค้าครบชุดโดยไม่ต้องล็อกอิน">
+          🚀 โหมด DEMO (ทดลองเล่นฟรี ไม่ต้องล็อกอิน)
+        </button>
+        <select id="shopSelector" class="select" style="height:34px;width:auto;min-width:195px;max-width:265px;padding:0 10px;font-size:0.82rem;background:#1e293b;color:#ffffff;border-color:#334155;" onchange="onSwitchShop(this.value)" aria-label="เลือกร้านค้าหรือเพจที่ต้องการดู"></select>
+        <button type="button" class="btn btn-sm btn-ghost-dark" onclick="openGoogleLoginModal()" id="googleUserBtn">
+          🔑 <span id="activeUserEmailLabel">โหมดทดลองเล่น (DEMO)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Single H1, Prominent DEMO Call-to-Action & 8 Easy Thai Tabs -->
+  <section class="hero-banner">
+    <div class="hero-container">
+      <div class="hero-top" style="justify-content:space-between;flex-wrap:wrap;gap:14px;">
+        <div class="inline-group" style="gap:14px;">
+          <img src="/logo.webp" alt="ไอคอนแอป MySMEBox ระบบบริหารร้านแม่ค้าออนไลน์บนมือถือ" width="64" height="64" class="hero-logo-lg" />
+          <div>
+            <div class="inline-group" style="flex-wrap:wrap;margin-bottom:4px;">
+              <span class="badge badge-gold">✨ ขวัญใจแม่ค้าออนไลน์ &amp; เถ้าแก่ลุยเดี่ยว</span>
+              <span id="aiStatusBadge" class="badge badge-blue">🟢 ผู้ช่วย AI พร้อมทำงาน</span>
+              <span id="activeRoleBadge" class="badge badge-green">สถานะ: เจ้าของร้าน (ดูได้ทุกหน้าจอ)</span>
+            </div>
+            <h1 class="hero-h1">MySMEBox ระบบบริหารธุรกิจสำหรับ SME 1 คน = 1 กิจการ บนมือถือ</h1>
+          </div>
+        </div>
+
+        <div class="inline-group" style="flex-wrap:wrap;">
+          <button type="button" class="btn btn-emerald" onclick="enterDemoMode(true)">
+            🎮 กดปุ่ม DEMO โหลดข้อมูลตัวอย่างครบชุด (ไม่ต้อง Login)
+          </button>
+          <a href="https://github.com/jaturapornchai/mysmebox" target="_blank" rel="noopener" class="btn btn-ghost-dark">
+            ⭐ Open Source GitHub
+          </a>
+        </div>
+      </div>
+
+      <p class="hero-desc">
+        ออกแบบให้ <strong>แม่ค้าออนไลน์</strong> ใช้งานง่ายที่สุด! มีข้อมูล <strong>ธนาคารในไทยครบทุกแห่ง + 77 จังหวัด 928 อำเภอ 7,436 ตำบล พร้อมรหัสไปรษณีย์และแผนที่จุดส่งของฟรี</strong> เตรียมไว้ให้พร้อมใช้ทันที ไม่ต้องเสียเวลาตั้งค่าเอง รองรับ <strong>ดูดออเดอร์จากแชท · ขายปลีก/ยกแพ็ค/ยกลัง · พิมพ์ใบปะหน้ากล่อง · เช็คยอด COD · ดูกำไรจริงหลังหักค่าแอด/ค่าส่ง</strong>
+      </p>
+
+      <!-- 8 Easy Thai Module Switcher Pills -->
+      <div class="pillars-scroll" role="tablist" aria-label="เมนูหลักของระบบแม่ค้าออนไลน์ MySMEBox">
+        <button type="button" class="pillar-chip active" data-tab-target="dashboard" onclick="switchTab('dashboard')">📊 1. ภาพรวมยอดขาย &amp; ทุกร้าน</button>
+        <button type="button" class="pillar-chip" data-tab-target="pos" onclick="switchTab('pos')">⚡ 2. เปิดบิลขาย &amp; ดูดแชท</button>
+        <button type="button" class="pillar-chip" data-tab-target="docs" onclick="switchTab('docs')">🧾 3. บิลขาย · ใบปะหน้า · เช็ค COD</button>
+        <button type="button" class="pillar-chip" data-tab-target="stock" onclick="switchTab('stock')">📦 4. สินค้า (ปลีก/แพ็ค/ลัง) &amp; บาร์โค้ด</button>
+        <button type="button" class="pillar-chip" data-tab-target="map" onclick="switchTab('map')">🗺️ 5. แผนที่ส่งของ/โกดัง &amp; ข้อมูลไทยครบ</button>
+        <button type="button" class="pillar-chip" data-tab-target="expense" onclick="switchTab('expense')">📸 6. จดรายจ่าย · ค่าแอด · หัก 50 ทวิ</button>
+        <button type="button" class="pillar-chip" data-tab-target="tax" onclick="switchTab('tax')">🤖 7. รายงานกำไร/ภาษี &amp; ผู้ช่วย AI</button>
+        <button type="button" class="pillar-chip" data-tab-target="team" onclick="switchTab('team')">👥 8. เปิดเพจเพิ่ม &amp; สิทธิ์ลูกน้อง</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Interactive Mobile-First Workspace -->
+  <main class="app-container">
+    <!-- DEMO Mode Quick Guide Banner -->
+    <div class="card" style="padding:12px 16px;margin-bottom:14px;background:linear-gradient(90deg,#ecfdf5 0%,#eff6ff 100%);border:2px solid #34d399;">
+      <div class="row-baseline" style="flex-wrap:wrap;">
+        <div class="inline-group" style="flex-wrap:wrap;">
+          <span class="badge badge-green">🎮 โหมดทดลองเล่นฟรี (DEMO)</span>
+          <strong style="font-size:0.92rem;color:#065f46;">คุณกำลังดูข้อมูลตัวอย่างครบชุด (3 ร้านค้า · สินค้าหลายหน่วยนับ · แผนที่ส่งของ · รายงานกำไร) ลองกดเล่นได้ทุกปุ่มโดยไม่ต้องล็อกอิน!</strong>
+        </div>
+        <div class="inline-group" style="flex-wrap:wrap;">
+          <span style="font-size:0.8rem;color:#047857;font-weight:600;">กำลังดูร้าน: <strong id="activeShopNameTitle">ร้านบิวตี้ออนไลน์ Live สด (สาขาหลัก)</strong> (<span id="activeShopCodeBadge">SH-MAIN</span>)</span>
+          <button type="button" class="btn btn-sm btn-outline" onclick="enterDemoMode(true)">🔄 รีเซ็ตข้อมูลตัวอย่างใหม่</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ollama Cloud AI Co-Pilot Smart Command Bar -->
+    <section class="ai-copilot-bar" aria-label="แถบสั่งงานผู้ช่วย AI แม่ค้าออนไลน์">
+      <div class="row-baseline" style="flex-wrap:wrap;">
+        <div class="inline-group" style="flex-wrap:wrap;">
+          <span class="badge badge-gold">✨ ผู้ช่วย AI แม่ค้าออนไลน์ (Ollama Cloud)</span>
+          <strong style="font-size:0.92rem;">พิมพ์บอก AI ประโยคเดียว ให้ช่วยเปิดบิล ดูดแชทลูกค้า จดค่าแอด หรือเพิ่มสินค้าได้เลย</strong>
+        </div>
+        <div class="inline-group">
+          <label for="aiModelSelect" style="font-size:0.78rem;color:#93c5fd;">สมอง AI:</label>
+          <select id="aiModelSelect" class="select" style="height:32px;width:auto;padding:0 10px;font-size:0.8rem;background:#1e293b;color:#fff;border-color:#475569;">
+            <option value="gpt-oss:120b">gpt-oss:120b (ฉลาดสุด แนะนำ)</option>
+            <option value="deepseek-v4.1-flash">deepseek-v4.1-flash (เร็วมาก)</option>
+            <option value="glm-5.3-flash">glm-5.3-flash</option>
+            <option value="kimi-k3">kimi-k3</option>
+            <option value="gemma4:31b">gemma4:31b</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ai-command-row">
+        <input id="aiCommandInput" type="text" class="ai-command-input" placeholder="เช่น เปิดบิลเซรั่มวิตซี 2 แพ็ค ส่งคุณดาว LINE OA เก็บเงินปลายทาง COD ค่าส่ง 40 บาท" />
+        <button id="aiCommandBtn" type="button" class="btn btn-primary" onclick="runAiSmartCommand()">🤖 สั่ง AI ทำให้เลย</button>
+      </div>
+
+      <div class="row-baseline" style="margin-top:8px;flex-wrap:wrap;font-size:0.78rem;color:#cbd5e1;">
+        <span id="aiCommandStatus">💡 ลองกดปุ่มตัวอย่างด้านขวาเพื่อดู AI ทำงานแทนแม่ค้าแบบสดๆ</span>
+        <div class="inline-group" style="flex-wrap:wrap;">
+          <button type="button" class="btn btn-sm btn-ghost-dark" style="height:28px;font-size:0.75rem;" onclick="runAiSmartCommand('เปิดบิลเซรั่มวิตซี 1 ลัง ส่งคุณแอน LINE OA โอนแล้ว')">ลองสั่ง: เปิดบิลขายส่ง 1 ลัง</button>
+          <button type="button" class="btn btn-sm btn-ghost-dark" style="height:28px;font-size:0.75rem;" onclick="runAiSmartCommand('บันทึกค่าจ้างอินฟลูเอนเซอร์รีวิว TikTok 2500 บาท หัก ณ ที่จ่าย 3%')">ลองสั่ง: จดค่ารีวิว TikTok</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Real-time Owner KPI Strip (Current Active Shop) -->
+    <section class="kpi-grid" aria-label="สรุปตัวเลขสำคัญของร้านวันนี้">
+      <div class="kpi-card highlight">
+        <div class="kpi-label">
+          <span>เงินสดเหลือจริงในกระเป๋า</span>
+          <span class="badge badge-gold">เงินสดรับจริง</span>
+        </div>
+        <div id="kpiNetCash" class="kpi-value">฿0.00</div>
+        <div class="kpi-sub">ยอดโอนเข้าจริง หักค่าใช้จ่ายที่จ่ายออกแล้ว</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>ยอดขายรวมของร้านนี้</span>
+          <span class="badge badge-blue">ยอดขาย</span>
+        </div>
+        <div id="kpiTotalSales" class="kpi-value">฿0.00</div>
+        <div class="kpi-sub">รวมทุกช่องทาง (LINE / FB / TikTok / Shopee)</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>กำไรสุทธิเข้ากระเป๋าแม่ค้า</span>
+          <span class="badge badge-green">กำไรจริง</span>
+        </div>
+        <div id="kpiNetProfit" class="kpi-value" style="color:var(--emerald);">฿0.00</div>
+        <div class="kpi-sub">หักต้นทุนของ + ค่าส่ง + ค่าแอดเรียบร้อย</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>ยอดรอโอน CF / รอเงิน COD เข้า</span>
+          <span class="badge badge-amber">รอเงินเข้า</span>
+        </div>
+        <div id="kpiUnpaid" class="kpi-value" style="color:var(--amber);">฿0.00</div>
+        <div class="kpi-sub">ออเดอร์ที่ลูกค้ายังไม่โอน หรือรอขนส่งโอน COD</div>
+      </div>
+    </section>
+
+    <!-- TAB 1: DASHBOARD (ภาพรวมยอดขาย & ดูรวมทุกร้าน/ทุกเพจ) -->
+    <section id="tab-dashboard" class="tab-panel active" aria-label="แดชบอร์ดภาพรวมแม่ค้าออนไลน์">
+      <!-- Consolidated Multi-Shop Holding Overview Card -->
+      <div class="card" style="border:2px solid #93c5fd;background:linear-gradient(180deg,#f8fafc 0%,#ffffff 100%);">
+        <div class="card-header" style="flex-wrap:wrap;">
+          <div>
+            <div class="inline-group" style="margin-bottom:4px;">
+              <span class="badge badge-gold">🌐 ภาพรวมทุกเพจ / ทุกร้านค้าของฉัน</span>
+              <span class="badge badge-blue" id="holdingUserEmailBadge">owner.mysmebox@gmail.com</span>
+              <span id="activeShopCategoryLabel" style="font-size:0.78rem;color:var(--text-muted);"></span>
+            </div>
+            <h2 class="card-title">สรุปยอดรวมทุกร้านค้าในมือคุณ (คลิกสลับดูแต่ละร้าน หรือดูรายงานรวมได้ทันที)</h2>
+          </div>
+          <button type="button" class="btn btn-sm btn-primary" onclick="switchTab('team')">+ เปิดเพจ/ร้านค้าใหม่เพิ่ม</button>
+        </div>
+
+        <div class="kpi-grid" style="margin-bottom:12px;">
+          <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:10px 12px;">
+            <div style="font-size:0.76rem;color:#1e40af;font-weight:600;">จำนวนร้านค้า/เพจทั้งหมด</div>
+            <div id="holdingTotalShops" style="font-size:1.2rem;font-weight:800;color:#1e3a8a;">3 ร้าน</div>
+          </div>
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:10px 12px;">
+            <div style="font-size:0.76rem;color:#065f46;font-weight:600;">ยอดขายรวมทุกร้าน</div>
+            <div id="holdingTotalSales" style="font-size:1.2rem;font-weight:800;color:#047857;">฿0.00</div>
+          </div>
+          <div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:10px 12px;">
+            <div style="font-size:0.76rem;color:#065f46;font-weight:600;">กำไรสุทธิรวมทุกร้าน</div>
+            <div id="holdingTotalProfit" style="font-size:1.2rem;font-weight:800;color:#059669;">฿0.00</div>
+          </div>
+          <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:10px 12px;">
+            <div style="font-size:0.76rem;color:#92400e;font-weight:600;">เงินสดรวมในมือทุกสาขา</div>
+            <div id="holdingTotalCash" style="font-size:1.2rem;font-weight:800;color:#b45309;">฿0.00</div>
+          </div>
+        </div>
+
+        <div id="holdingShopsBreakdownList" class="list-stack"></div>
+      </div>
+
+      <!-- Quick Action Tiles for Online Sellers -->
+      <div class="quick-grid">
+        <button type="button" class="quick-tile" onclick="switchTab('pos')">
+          <span class="quick-icon" style="background:#dbeafe;color:#1d4ed8;">⚡</span>
+          <div>
+            <div class="quick-title">เปิดบิล / ดูดแชท</div>
+            <div class="quick-sub">ขายปลีก-แพ็ค-ลัง + ยิงบาร์โค้ด</div>
+          </div>
+        </button>
+
+        <button type="button" class="quick-tile" onclick="switchTab('stock')">
+          <span class="quick-icon" style="background:#fef3c7;color:#b45309;">📦</span>
+          <div>
+            <div class="quick-title">สต๊อก &amp; หลายหน่วยนับ</div>
+            <div class="quick-sub">ตั้งราคาขวด/แพ็ค/ลัง + บาร์โค้ด</div>
+          </div>
+        </button>
+
+        <button type="button" class="quick-tile" onclick="switchTab('map')">
+          <span class="quick-icon" style="background:#d1fae5;color:#047857;">🗺️</span>
+          <div>
+            <div class="quick-title">แผนที่ส่งของ &amp; โกดัง</div>
+            <div class="quick-sub">พิกัด 77 จังหวัด + ธนาคารไทย</div>
+          </div>
+        </button>
+
+        <button type="button" class="quick-tile" onclick="switchTab('tax')">
+          <span class="quick-icon" style="background:#ffe4e6;color:#be123c;">📊</span>
+          <div>
+            <div class="quick-title">ดูรายงานกำไร &amp; ภาษี</div>
+            <div class="quick-sub">สรุปงบแม่ค้า + AI ช่วยคิดแคปชั่น</div>
+          </div>
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🔔 เรื่องสำคัญที่แม่ค้าต้องรู้วันนี้</h2>
+          <span class="badge badge-blue">เตือนอัตโนมัติ</span>
+        </div>
+        <div id="dashboardAlerts" class="list-stack"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🧾 ออเดอร์และบิลขายล่าสุดของร้านนี้</h2>
+          <button type="button" class="btn btn-sm btn-outline" onclick="switchTab('docs')">ดูบิลทั้งหมด</button>
+        </div>
+        <div id="dashboardRecentBills" class="list-stack"></div>
+      </div>
+    </section>
+
+    <!-- TAB 2: QUICK POS & ONLINE SELLER (เปิดบิลขายไว & ดูดออเดอร์แชท + ดึงจังหวัด/ธนาคารจากระบบกลาง) -->
+    <section id="tab-pos" class="tab-panel" aria-label="ระบบเปิดบิลขายไวและดูดแชทแม่ค้าออนไลน์">
+      <!-- AI Chat-to-Order & Barcode Scanner Bar -->
+      <div class="card" style="background:var(--bg-subtle);">
+        <div class="pos-layout">
+          <div>
+            <div class="row-baseline" style="margin-bottom:6px;">
+              <strong style="font-size:0.9rem;">💬 ก๊อปข้อความแชทที่ลูกค้าสั่งของ มาวางให้ AI กรอกบิลให้อัตโนมัติ</strong>
+              <span class="badge badge-blue">ดูดแชทไว</span>
+            </div>
+            <div class="inline-group" style="width:100%;">
+              <input id="posAiChatInput" type="text" class="input" placeholder="วางข้อความแชท ชื่อ ที่อยู่ เบอร์โทร และของที่ลูกค้าสั่ง..." />
+              <button id="posAiParseBtn" type="button" class="btn btn-primary" onclick="runAiParseOrder()">🤖 ดูดแชทเข้าบิล</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="row-baseline" style="margin-bottom:6px;">
+              <strong style="font-size:0.9rem;">🏷 ยิงบาร์โค้ดตามหน่วยนับ (แยกขวดเดี่ยว / แพ็ค / ยกลังให้อัตโนมัติ)</strong>
+              <span class="badge badge-gold">บาร์โค้ดตามหน่วย</span>
+            </div>
+            <div class="inline-group" style="width:100%;">
+              <input id="posBarcodeInput" type="text" class="input" placeholder="ยิงหรือพิมพ์บาร์โค้ด เช่น 8859001001035" onkeydown="if(event.key==='Enter')scanBarcodeByInput()" />
+              <button type="button" class="btn btn-emerald" onclick="scanBarcodeByInput()">ยิงเข้าบิล</button>
+            </div>
+            <div class="inline-group" style="margin-top:6px;flex-wrap:wrap;font-size:0.75rem;">
+              <span style="color:var(--text-muted);">กดลองยิงบาร์โค้ด:</span>
+              <button type="button" class="barcode-tag" style="cursor:pointer;" onclick="scanBarcodeByInput('8859001001011')">8859001001011 (1 ขวด)</button>
+              <button type="button" class="barcode-tag" style="cursor:pointer;" onclick="scanBarcodeByInput('8859001001035')">8859001001035 (แพ็ค 3 ขวด)</button>
+              <button type="button" class="barcode-tag" style="cursor:pointer;" onclick="scanBarcodeByInput('8859001001127')">8859001001127 (ยกลัง 12 ขวด)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pos-layout">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">1. แตะเลือกสินค้าตามหน่วยที่ลูกค้าสั่ง (เห็นกำไรทันที)</h2>
+            <button type="button" class="btn btn-sm btn-outline" onclick="switchTab('stock')">+ เพิ่ม/แก้สินค้า</button>
+          </div>
+          <div id="posProductGrid" class="product-grid"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">2. ข้อมูลจัดส่งลูกค้า &amp; ช่องทางรับเงิน</h2>
+            <span class="badge badge-green">ดึงตำบล/ธนาคารจากระบบกลาง</span>
+          </div>
+
+          <div id="posCartList" class="list-stack" style="margin-bottom:14px;"></div>
+
+          <div class="form-group">
+            <label class="form-label" for="posCustomer">ชื่อลูกค้า / ชื่อไลน์หรือเฟซบุ๊ก</label>
+            <input id="posCustomer" type="text" class="input" placeholder="เช่น คุณพลอย (LINE @ploybeauty)" />
+          </div>
+
+          <!-- ดึงจังหวัด อำเภอ ตำบล รหัสไปรษณีย์ พิกัด GPS จากระบบกลางอัตโนมัติ -->
+          <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:10px;margin-bottom:12px;">
+            <div class="row-baseline" style="margin-bottom:6px;flex-wrap:wrap;">
+              <strong style="font-size:0.82rem;color:#1e3a8a;">📍 เลือกจังหวัด-อำเภอ-ตำบล (ดึงรหัสไปรษณีย์ &amp; พิกัดแผนที่จากระบบกลางอัตโนมัติ)</strong>
+              <button type="button" class="btn btn-sm btn-outline" style="height:26px;font-size:0.72rem;" onclick="switchTab('map')">🗺️ ดูบนแผนที่</button>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:6px;">
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="posProvinceSelect">จังหวัด (77 จังหวัด)</label>
+                <select id="posProvinceSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onPosProvinceChange(this.value)"></select>
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="posDistrictSelect">อำเภอ / เขต</label>
+                <select id="posDistrictSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onPosDistrictChange(this.value)"></select>
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="posSubdistrictSelect">ตำบล / แขวง</label>
+                <select id="posSubdistrictSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onPosSubdistrictChange(this.value)"></select>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;font-size:0.76rem;color:#1e40af;">
+              <div>รหัสไปรษณีย์: <strong id="posZipCodeDisplay">10110</strong></div>
+              <div>ละติจูด (Lat): <strong id="posLatDisplay">13.736000</strong></div>
+              <div>ลองจิจูด (Lng): <strong id="posLngDisplay">100.576000</strong></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="posAddress">บ้านเลขที่ / ซอย / ถนน / เบอร์โทร (ระบบต่อท้ายตำบล-อำเภอ-จังหวัดให้เมื่อพิมพ์ใบปะหน้า)</label>
+            <input id="posAddress" type="text" class="input" placeholder="เช่น 99/12 ถ.สุขุมวิท ซอย 24 (โทร 081-234-5678)" />
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="posChannel">ช่องทางที่ลูกค้าสั่ง</label>
+              <select id="posChannel" class="select">
+                <option value="LINE OA">LINE OA</option>
+                <option value="Facebook / Live">Facebook / Live สด</option>
+                <option value="TikTok Shop">TikTok Shop</option>
+                <option value="Shopee">Shopee</option>
+                <option value="หน้าร้าน">หน้าร้าน</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="posCourier">ขนส่งที่ใช้ส่งของ</label>
+              <select id="posCourier" class="select">
+                <option value="Flash Express">Flash Express</option>
+                <option value="Kerry / KEX">Kerry / KEX</option>
+                <option value="J&T Express">J&amp;T Express</option>
+                <option value="ไปรษณีย์ไทย (EMS)">ไปรษณีย์ไทย (EMS)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="posShippingFee">ค่าส่ง (บาท)</label>
+              <input id="posShippingFee" type="number" step="0.01" class="input" value="0" onchange="renderCart()" />
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="posBankSelect">ธนาคารรับเงิน (จากระบบกลาง)</label>
+              <select id="posBankSelect" class="select"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="posPayStatus">สถานะการจ่ายเงิน</label>
+              <select id="posPayStatus" class="select">
+                <option value="PAID">โอนเงินแล้ว</option>
+                <option value="COD_PENDING">เก็บเงินปลายทาง (COD)</option>
+                <option value="UNPAID">CF รอโอนเงิน</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="posDocType">ชนิดบิล</label>
+              <select id="posDocType" class="select" onchange="renderCart()">
+                <option value="RECEIPT">บิลเงินสด / ใบเสร็จ</option>
+                <option value="TAX_INVOICE">ใบกำกับภาษี (VAT 7%)</option>
+                <option value="INVOICE">ใบวางบิล / แจ้งยอด</option>
+                <option value="QUOTATION">ใบเสนอราคา</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="posSlipFile">แนบรูปสลิปโอนเงินลูกค้า (เก็บรูปปลอดภัยใน MinIO)</label>
+            <div class="inline-group">
+              <input id="posSlipFile" type="file" accept="image/*" class="input" style="padding:8px;" onchange="handleUploadImage(this, 'slips', 'posSlipUrl')" />
+              <input id="posSlipUrl" type="hidden" />
+            </div>
+            <div id="posSlipPreview" style="font-size:0.78rem;color:var(--emerald);"></div>
+          </div>
+
+          <div style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);padding:12px 14px;margin:8px 0 14px;">
+            <div class="row-baseline" style="font-size:0.88rem;margin-bottom:4px;">
+              <span>ยอดรวมค่าของ + ค่าส่ง</span>
+              <span id="posSubTotal" class="money">฿0.00</span>
+            </div>
+            <div class="row-baseline" style="font-size:0.88rem;margin-bottom:4px;">
+              <span>ภาษีมูลค่าเพิ่ม (VAT 7%)</span>
+              <span id="posVatTotal" class="money">฿0.00</span>
+            </div>
+            <div class="row-baseline" style="font-size:0.88rem;margin-bottom:8px;color:var(--emerald);">
+              <span>กำไรของบิลนี้ (หักต้นทุนของตามหน่วยนับแล้ว)</span>
+              <span id="posProfitPreview" class="money">฿0.00</span>
+            </div>
+            <div class="row-baseline" style="font-size:1.12rem;padding-top:8px;border-top:1px solid var(--border);">
+              <strong>ยอดที่ลูกค้าต้องจ่ายสุทธิ</strong>
+              <strong id="posGrandTotal" class="money" style="color:var(--primary);">฿0.00</strong>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block" onclick="submitQuickBill()">
+            ⚡ เปิดบิลทันที · ปักหมุดแผนที่ส่งของ &amp; สร้าง QR รับเงิน
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: ONE-CLICK DOCS & COD TRACKER (บิลขาย · ใบปะหน้ากล่อง · เช็คยอดโอน/COD) -->
+    <section id="tab-docs" class="tab-panel" aria-label="ระบบบิลขายและเช็คยอดโอนหรือเก็บเงินปลายทาง COD">
+      <div class="card">
+        <div class="card-header" style="flex-wrap:wrap;">
+          <div>
+            <h2 class="card-title">🧾 รายการบิลขายทั้งหมด · พิมพ์ใบปะหน้ากล่อง · เช็คยอดโอน &amp; COD</h2>
+            <p style="font-size:0.82rem;color:var(--text-muted);margin-top:2px;">พอลูกค้าโอนเงินมาแล้ว หรือขนส่งโอนเงิน COD เข้าบัญชี กดปุ่มสีเขียว "รับเงินเข้าแล้ว 1 คลิก" ได้เลย</p>
+          </div>
+          <div class="inline-group" style="flex-wrap:wrap;">
+            <button type="button" class="btn btn-sm btn-primary" data-bill-filter="ALL" onclick="setBillFilter('ALL')">ดูทั้งหมด</button>
+            <button type="button" class="btn btn-sm btn-outline" data-bill-filter="COD_PENDING" onclick="setBillFilter('COD_PENDING')">รอเงิน COD จากขนส่ง</button>
+            <button type="button" class="btn btn-sm btn-outline" data-bill-filter="UNPAID" onclick="setBillFilter('UNPAID')">CF รอโอนเงิน</button>
+            <button type="button" class="btn btn-sm btn-outline" data-bill-filter="PAID" onclick="setBillFilter('PAID')">รับเงินเรียบร้อย</button>
+            <button type="button" class="btn btn-sm btn-outline" data-bill-filter="QUOTED" onclick="setBillFilter('QUOTED')">ใบเสนอราคา</button>
+          </div>
+        </div>
+        <div id="docsListContainer" class="list-stack"></div>
+      </div>
+    </section>
+
+    <!-- TAB 4: MULTI-UOM & BARCODE PER UOM (สินค้าหลายหน่วยนับ & บาร์โค้ดตามหน่วยนับ) -->
+    <section id="tab-stock" class="tab-panel" aria-label="ระบบสินค้าหลายหน่วยนับและบาร์โค้ดตามหน่วยนับ">
+      <div class="pos-layout">
+        <div class="card">
+          <div class="card-header" style="flex-wrap:wrap;">
+            <div>
+              <h2 class="card-title">📦 สต๊อกสินค้า &amp; ราคาขายแยกตามหน่วยนับ (ปลีก / แพ็ค / ยกลัง)</h2>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:2px;">
+                นับสต๊อกรวมที่ <strong>หน่วยย่อยที่สุดที่เดียว (เช่น ขวด)</strong> เวลาขายเป็นแพ็คหรือยกลัง ระบบจะคูณตัดสต๊อกขวดให้เองอัตโนมัติพร้อมผูกบาร์โค้ดและราคาแยกแต่ละหน่วย
+              </p>
+            </div>
+            <span class="badge badge-gold">หลายหน่วยนับ + บาร์โค้ด</span>
+          </div>
+          <div id="stockListContainer" class="list-stack"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">+ เพิ่มสินค้าใหม่ (ตั้งหน่วยปลีก + หน่วยแพ็ค/ลัง + บาร์โค้ด)</h2>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 2fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="newProdSku">รหัสสินค้าสั้นๆ (SKU)</label>
+              <input id="newProdSku" type="text" class="input" placeholder="เช่น SR-COLLAGEN" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newProdName">ชื่อสินค้า</label>
+              <input id="newProdName" type="text" class="input" placeholder="เช่น สบู่เซรั่มวิตซีหน้าใส 80g" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="newProdImageFile">รูปสินค้า (อัปโหลดเก็บใน MinIO)</label>
+            <input id="newProdImageFile" type="file" accept="image/*" class="input" style="padding:8px;" onchange="handleUploadImage(this, 'products', 'newProdImageUrl')" />
+            <input id="newProdImageUrl" type="hidden" />
+            <div id="newProdImagePreview" style="font-size:0.78rem;color:var(--emerald);"></div>
+          </div>
+
+          <!-- ส่วนที่ 1: หน่วยนับหลัก & ตารางแปลงหน่วยนับ -->
+          <div style="background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:12px;">
+            <div class="row-baseline" style="margin-bottom:8px;">
+              <strong style="font-size:0.88rem;color:var(--navy-900);">1. กำหนดหน่วยย่อยสุด (ใช้นับสต๊อก) และหน่วยแพ็ค/ลัง</strong>
+              <span class="badge badge-blue">ตัดสต๊อกแม่นยำ</span>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+              <div class="form-group">
+                <label class="form-label" for="newProdBaseUnitCode">รหัสหน่วยย่อย</label>
+                <input id="newProdBaseUnitCode" type="text" class="input" value="BTL" placeholder="เช่น BTL, PCS" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="newProdBaseUnit">ชื่อหน่วยย่อย (1:1)</label>
+                <input id="newProdBaseUnit" type="text" class="input" value="ขวด" placeholder="เช่น ขวด, ชิ้น, ถุง" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="newProdStock">สต๊อกที่มีตอนนี้</label>
+                <input id="newProdStock" type="number" class="input" value="36" />
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1.2fr 0.8fr 0.8fr;gap:6px;padding-top:6px;border-top:1px dashed var(--border);">
+              <div class="form-group" style="margin-bottom:4px;">
+                <label class="form-label" for="newProdPackCode">รหัสหน่วยแพ็ค/ลัง</label>
+                <input id="newProdPackCode" type="text" class="input" value="PK6" placeholder="PK6 / BOX12" />
+              </div>
+              <div class="form-group" style="margin-bottom:4px;">
+                <label class="form-label" for="newProdPackName">ชื่อเรียกตอนขาย</label>
+                <input id="newProdPackName" type="text" class="input" value="แพ็ค(6ขวด)" placeholder="แพ็ค(6ขวด)" />
+              </div>
+              <div class="form-group" style="margin-bottom:4px;">
+                <label class="form-label" for="newProdPackFactor">1 แพ็คมีกี่ขวด (ตัวตั้ง)</label>
+                <input id="newProdPackFactor" type="number" class="input" value="6" />
+              </div>
+              <div class="form-group" style="margin-bottom:4px;">
+                <label class="form-label" for="newProdPackDivide">ตัวหาร</label>
+                <input id="newProdPackDivide" type="number" class="input" value="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ส่วนที่ 2: บาร์โค้ด & ราคาตามหน่วยนับ -->
+          <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px;margin-bottom:12px;">
+            <div class="row-baseline" style="margin-bottom:8px;flex-wrap:wrap;">
+              <strong style="font-size:0.88rem;color:#1e3a8a;">2. บาร์โค้ด &amp; ราคาขายแยกตามหน่วยนับ</strong>
+              <div class="inline-group">
+                <button type="button" class="btn btn-sm btn-outline" style="height:28px;font-size:0.74rem;" onclick="fillGeneratedEan13('newProdBaseBarcode', '200')">สร้างบาร์โค้ดร้าน (200)</button>
+                <button type="button" class="btn btn-sm btn-outline" style="height:28px;font-size:0.74rem;" onclick="fillGeneratedEan13('newProdBaseBarcode', '885')">สร้างบาร์โค้ดไทย (885)</button>
+              </div>
+            </div>
+
+            <div style="font-size:0.8rem;font-weight:700;margin-bottom:4px;color:#1e40af;">บาร์โค้ด &amp; ราคาขายปลีก (หน่วยย่อย 1 ชิ้น/ขวด)</div>
+            <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:6px;margin-bottom:10px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdBaseBarcode">บาร์โค้ดขายปลีก</label>
+                <input id="newProdBaseBarcode" type="text" class="input" placeholder="8859..." />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdCost">ต้นทุน (บาท)</label>
+                <input id="newProdCost" type="number" step="0.01" class="input" placeholder="120" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdPrice">ราคาขายปลีก</label>
+                <input id="newProdPrice" type="number" step="0.01" class="input" placeholder="250" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdWholesale">ราคาส่งตัวแทน</label>
+                <input id="newProdWholesale" type="number" step="0.01" class="input" placeholder="220" />
+              </div>
+            </div>
+
+            <div class="row-baseline" style="margin-bottom:4px;">
+              <span style="font-size:0.8rem;font-weight:700;color:#1e40af;">บาร์โค้ด &amp; ราคาขายยกแพ็ค / ยกลัง</span>
+              <button type="button" class="btn btn-sm btn-outline" style="height:26px;font-size:0.72rem;" onclick="fillGeneratedEan13('newProdPackBarcode', '885')">สร้างบาร์โค้ดแพ็ค (885)</button>
+            </div>
+            <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:6px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdPackBarcode">บาร์โค้ดแพ็ค/ลัง</label>
+                <input id="newProdPackBarcode" type="text" class="input" placeholder="8859..." />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdPackPrice">ราคาขายยกแพ็ค</label>
+                <input id="newProdPackPrice" type="number" step="0.01" class="input" placeholder="1350" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="newProdPackWholesale">ราคาส่งตัวแทนยกแพ็ค</label>
+                <input id="newProdPackWholesale" type="number" step="0.01" class="input" placeholder="1250" />
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block" onclick="addNewProduct()">+ บันทึกสินค้าใหม่เข้าร้าน</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: FREE INTERACTIVE MAP (โกดัง / ลูกค้า / สถานะจุดส่งของ) & CENTRAL THAI MASTER DATA -->
+    <section id="tab-map" class="tab-panel" aria-label="ระบบแผนที่จุดจัดส่ง โกดัง ลูกค้า และข้อมูลจังหวัดธนาคารในไทย">
+      <div class="pos-layout">
+        <!-- Interactive Free Leaflet + OpenStreetMap Card -->
+        <div class="card">
+          <div class="card-header" style="flex-wrap:wrap;">
+            <div>
+              <h2 class="card-title">🗺️ แผนที่พิกัดลูกค้า · โกดังเก็บของ · ติดตามสถานะจุดส่งพัสดุ (ใช้งานฟรี 100%)</h2>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:2px;">
+                คลิกบนแผนที่เพื่อปักหมุด หรือเลือกจังหวัด-อำเภอ-ตำบล ระบบจะเลื่อนแผนที่ไปจุดนั้นให้อัตโนมัติ ไม่ต้องตั้งค่าเอง
+              </p>
+            </div>
+            <div class="inline-group" style="flex-wrap:wrap;">
+              <button type="button" class="btn btn-sm btn-primary" data-map-filter="ALL" onclick="setMapFilter('ALL')">ทั้งหมด</button>
+              <button type="button" class="btn btn-sm btn-outline" data-map-filter="WAREHOUSE" onclick="setMapFilter('WAREHOUSE')">🏭 โกดัง/ร้าน</button>
+              <button type="button" class="btn btn-sm btn-outline" data-map-filter="CUSTOMER" onclick="setMapFilter('CUSTOMER')">📍 ลูกค้าประจำ</button>
+              <button type="button" class="btn btn-sm btn-outline" data-map-filter="DELIVERY" onclick="setMapFilter('DELIVERY')">🚚 จุดส่งของ/COD</button>
+            </div>
+          </div>
+
+          <!-- Search Place / Current GPS Row -->
+          <div class="inline-group" style="margin-bottom:10px;width:100%;flex-wrap:wrap;">
+            <input id="mapSearchInput" type="text" class="input" style="flex:1;min-width:200px;" placeholder="ค้นหาชื่อสถานที่ ถนน หรือตำบล เช่น สยาม, นิมมาน เชียงใหม่, ลาดพร้าว..." onkeydown="if(event.key==='Enter')searchPlaceOnMap()" />
+            <button type="button" class="btn btn-outline" onclick="searchPlaceOnMap()">🔍 ค้นหาบนแผนที่</button>
+            <button type="button" class="btn btn-emerald" onclick="locateMyCurrentGps()">📍 ตำแหน่งปัจจุบันของฉัน</button>
+          </div>
+          <div id="mapSearchResultsBox" style="margin-bottom:8px;"></div>
+
+          <!-- Leaflet Map Container -->
+          <div id="InteractiveLeafletMap" style="width:100%;height:390px;border-radius:14px;border:2px solid #cbd5e1;z-index:1;margin-bottom:12px;"></div>
+
+          <!-- List of Pins -->
+          <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:8px;">📌 รายการหมุดโกดัง ลูกค้า และสถานะพัสดุของร้านนี้</h3>
+          <div id="mapLocationsList" class="list-stack"></div>
+        </div>
+
+        <!-- Add New Pin + Central System Master Data Summary (77 Provinces & 20 Thai Banks) -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">+ ปักหมุดตำแหน่งใหม่ (ดึงพิกัดตำบลจากระบบกลางอัตโนมัติ)</h2>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="newLocType">ประเภทจุดปักหมุด</label>
+              <select id="newLocType" class="select">
+                <option value="CUSTOMER">📍 ตำแหน่งลูกค้า / ตัวแทน</option>
+                <option value="WAREHOUSE">🏭 โกดังเก็บของ / สาขาร้าน</option>
+                <option value="DELIVERY">🚚 จุดจัดส่งพัสดุตามบิล</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newLocTitle">ชื่อจุดปักหมุด / ชื่อลูกค้า / ชื่อโกดัง</label>
+              <input id="newLocTitle" type="text" class="input" placeholder="เช่น โกดังแพ็กของสาขารังสิต / บ้านคุณนัท" />
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="newLocContact">ชื่อผู้ติดต่อ</label>
+              <input id="newLocContact" type="text" class="input" placeholder="เช่น คุณนัท" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newLocPhone">เบอร์โทรศัพท์</label>
+              <input id="newLocPhone" type="text" class="input" placeholder="081-xxx-xxxx" />
+            </div>
+          </div>
+
+          <!-- เลือกจังหวัด อำเภอ ตำบล จากระบบกลาง (77 จังหวัด 928 อำเภอ 7,436 ตำบล) -->
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:10px;margin-bottom:12px;">
+            <div style="font-size:0.82rem;font-weight:700;color:#065f46;margin-bottom:6px;">
+              🌏 เลือกจังหวัด → อำเภอ → ตำบล (ระบบกลางดึงรหัสไปรษณีย์ + เลื่อนแผนที่ไปปักหมุดให้อัตโนมัติ)
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:8px;">
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="mapProvinceSelect">จังหวัด</label>
+                <select id="mapProvinceSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onMapProvinceChange(this.value)"></select>
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="mapDistrictSelect">อำเภอ / เขต</label>
+                <select id="mapDistrictSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onMapDistrictChange(this.value)"></select>
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.74rem;" for="mapSubdistrictSelect">ตำบล / แขวง</label>
+                <select id="mapSubdistrictSelect" class="select" style="height:36px;font-size:0.82rem;padding:0 8px;" onchange="onMapSubdistrictChange(this.value)"></select>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+              <div>
+                <label class="form-label" style="font-size:0.72rem;" for="newLocZip">รหัสไปรษณีย์</label>
+                <input id="newLocZip" type="text" class="input" style="height:34px;font-size:0.82rem;" readonly />
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.72rem;" for="newLocLat">ละติจูด (Lat)</label>
+                <input id="newLocLat" type="number" step="0.000001" class="input" style="height:34px;font-size:0.82rem;" value="13.811000" />
+              </div>
+              <div>
+                <label class="form-label" style="font-size:0.72rem;" for="newLocLng">ลองจิจูด (Lng)</label>
+                <input id="newLocLng" type="number" step="0.000001" class="input" style="height:34px;font-size:0.82rem;" value="100.612000" />
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div class="form-group">
+              <label class="form-label" for="newLocStatus">สถานะจุดจัดส่ง / โกดัง</label>
+              <select id="newLocStatus" class="select">
+                <option value="ACTIVE">ใช้งานปกติ (บ้านลูกค้า/ตัวแทน)</option>
+                <option value="ACTIVE_WAREHOUSE">โกดังพร้อมส่งของ</option>
+                <option value="IN_TRANSIT">กำลังจัดส่งพัสดุ</option>
+                <option value="COD_PENDING">ส่งแล้ว รอเก็บเงินปลายทาง (COD)</option>
+                <option value="DELIVERED">ส่งถึงมือลูกค้าเรียบร้อย</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newLocAddress">รายละเอียดที่อยู่เพิ่มเติม</label>
+              <input id="newLocAddress" type="text" class="input" placeholder="บ้านเลขที่ / ซอย / จุดสังเกต" />
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block" onclick="addNewLocationPin()">
+            📌 บันทึกตำแหน่งลงแผนที่ &amp; PostgreSQL
+          </button>
+
+          <!-- ข้อมูลถาวรจากระบบกลาง (ไม่ต้องตั้งค่าเอง) -->
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--border);">
+            <div class="row-baseline" style="margin-bottom:8px;">
+              <strong style="font-size:0.9rem;">🏦 ข้อมูลถาวรจากระบบกลาง (พร้อมใช้ทันที ไม่ต้องตั้งค่าเอง)</strong>
+              <span class="badge badge-blue" id="centralMasterSummaryBadge">77 จังหวัด · 7,436 ตำบล · 20 ธนาคาร</span>
+            </div>
+            <div id="centralThaiBanksGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:6px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: SNAP EXPENSE & WHT 50 ทวิ (จดรายจ่าย · ค่าส่ง · ค่าแอด · หัก 50 ทวิ) -->
+    <section id="tab-expense" class="tab-panel" aria-label="ระบบบันทึกรายจ่ายแม่ค้าออนไลน์และหัก ณ ที่จ่าย 50 ทวิ">
+      <div class="pos-layout">
+        <div class="card">
+          <div class="card-header" style="flex-wrap:wrap;">
+            <h2 class="card-title">📸 จดบิลรายจ่ายร้านค้า · ค่าแอด · ค่าส่ง · หักภาษี ณ ที่จ่าย (50 ทวิ)</h2>
+            <span class="badge badge-blue">เก็บรูปบิลใน MinIO</span>
+          </div>
+
+          <div style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:10px;padding:10px;margin-bottom:12px;">
+            <label class="form-label" for="expAiRawText">✨ พิมพ์บอก AI สั้นๆ ให้ช่วยแยกหมวดรายจ่ายและคำนวณภาษีหัก ณ ที่จ่ายให้อัตโนมัติ</label>
+            <div class="inline-group" style="margin-top:4px;width:100%;">
+              <input id="expAiRawText" type="text" class="input" placeholder="เช่น จ่ายค่าจ้างน้องแพรวรีวิวลง TikTok 3,500 บาท หักภาษีตามกฎหมาย" />
+              <button id="expAiParseBtn" type="button" class="btn btn-emerald" onclick="runAiParseExpense()">✨ ให้ AI กรอกให้</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="expVendor">จ่ายเงินให้ใคร / ร้านไหน</label>
+            <input id="expVendor" type="text" class="input" placeholder="เช่น บจก. แฟลช เอ็กซ์เพรส / น้องแพรวรีวิว TikTok / ร้านกล่องพัสดุ" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="expCategory">เป็นค่าใช้จ่ายเรื่องอะไร</label>
+            <input id="expCategory" type="text" class="input" placeholder="เช่น ค่าส่งพัสดุ, ค่าโฆษณา TikTok/FB, ค่ากล่องและบับเบิ้ล" />
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="form-group">
+              <label class="form-label" for="expAmount">ยอดเงินก่อนภาษี (บาท)</label>
+              <input id="expAmount" type="number" step="0.01" class="input" placeholder="1000.00" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expBankSelect">จ่ายจากธนาคารไหน (ระบบกลาง)</label>
+              <select id="expBankSelect" class="select"></select>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="form-group">
+              <label class="form-label" for="expHasVat">มีใบกำกับภาษีซื้อ (VAT 7%) ไหม?</label>
+              <select id="expHasVat" class="select">
+                <option value="0">ไม่มี VAT</option>
+                <option value="1">มี VAT ซื้อ 7% (เอาไปหักภาษีขายได้)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="expWhtRate">หักภาษี ณ ที่จ่าย (ใบ 50 ทวิ)</label>
+              <select id="expWhtRate" class="select">
+                <option value="0">ไม่หัก ณ ที่จ่าย (ซื้อของทั่วไป)</option>
+                <option value="1">หัก 1% (ค่าขนส่งพัสดุ)</option>
+                <option value="3">หัก 3% (จ้างรีวิว / ฟรีแลนซ์ / บริการ)</option>
+                <option value="5">หัก 5% (ค่าเช่าร้าน / ค่าเช่าโกดัง)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="expReceiptFile">ถ่ายรูปบิล / ใบเสร็จเก็บไว้เป็นหลักฐาน (MinIO)</label>
+            <input id="expReceiptFile" type="file" accept="image/*" class="input" style="padding:8px;" onchange="handleUploadImage(this, 'receipts', 'expReceiptUrl')" />
+            <input id="expReceiptUrl" type="hidden" />
+            <div id="expReceiptPreview" style="font-size:0.78rem;color:var(--emerald);"></div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block" onclick="addExpense()">+ บันทึกรายจ่ายเข้าร้าน</button>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">ประวัติรายจ่าย &amp; ยอดหัก ณ ที่จ่าย (50 ทวิ)</h2>
+          </div>
+          <div id="expenseListContainer" class="list-stack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 7: TAX PACK & AI ASSISTANT (รายงานกำไร/ภาษี & ผู้ช่วย AI แม่ค้าออนไลน์) -->
+    <section id="tab-tax" class="tab-panel" aria-label="รายงานกำไรและชุดเตรียมภาษีพร้อมผู้ช่วย AI">
+      <div class="pos-layout">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">📊 รายงานสรุปกำไร &amp; ภาษีพร้อมส่งสำนักงานบัญชี</h2>
+            <button type="button" class="btn btn-sm btn-primary" onclick="exportAccountingCsv()">⬇ ดาวน์โหลดไฟล์ Excel (CSV)</button>
+          </div>
+
+          <div class="list-stack">
+            <div class="list-row">
+              <div>
+                <div class="list-title">1. สรุปภาษีมูลค่าเพิ่ม (ภ.พ.30)</div>
+                <div class="list-sub">ภาษีขาย <strong id="taxOutputVat">฿0.00</strong> หัก ภาษีซื้อ <strong id="taxInputVat">฿0.00</strong></div>
+              </div>
+              <div class="inline-group">
+                <span class="badge badge-blue">VAT สุทธิ</span>
+                <span id="taxNetVat" class="money">฿0.00</span>
+              </div>
+            </div>
+
+            <div class="list-row">
+              <div>
+                <div class="list-title">2. ภาษีหัก ณ ที่จ่ายรอนำส่งสรรพากร (ใบ 50 ทวิ)</div>
+                <div class="list-sub">รวมยอดที่หัก 1% (ขนส่ง), 3% (รีวิว/บริการ), 5% (ค่าเช่า)</div>
+              </div>
+              <div class="inline-group">
+                <span class="badge badge-amber">ยอดรอนำส่ง</span>
+                <span id="taxTotalWht" class="money">฿0.00</span>
+              </div>
+            </div>
+
+            <div class="list-row">
+              <div>
+                <div class="list-title">3. สรุปรายรับ-รายจ่ายจริงของร้าน</div>
+                <div class="list-sub">ยอดขายรวม <strong id="taxIncomeSummary">฿0.00</strong> · รายจ่ายรวม <strong id="taxExpenseSummary">฿0.00</strong></div>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline" onclick="exportAccountingCsv()">ดาวน์โหลดรายงาน</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">🤖 ผู้ช่วย AI แม่ค้าออนไลน์ (ช่วยคิดบทไลฟ์สด &amp; ทวงยอด CF)</h2>
+            <span class="badge badge-gold">Ollama Cloud</span>
+          </div>
+          <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:10px;">
+            กดปุ่มด้านล่างให้ AI ช่วยเขียนข้อความจากข้อมูลสินค้าจริงในร้าน แล้วก๊อปไปส่งลูกค้าหรือโพสต์ขายได้ทันที:
+          </p>
+          <div class="inline-group" style="flex-wrap:wrap;margin-bottom:10px;">
+            <button type="button" class="btn btn-sm btn-primary" onclick="generateAiMessage('SUMMARY')">📊 วิเคราะห์กำไร &amp; แนะนำโปรขายดี</button>
+            <button type="button" class="btn btn-sm btn-outline" onclick="generateAiMessage('LIVE_SCRIPT')">🎥 คิดบทพูด Live สด &amp; แคปชั่นโพสต์ขาย</button>
+            <button type="button" class="btn btn-sm btn-outline" onclick="generateAiMessage('FOLLOW_UP')">💬 ร่างข้อความทวงยอดโอน CF แบบน่ารักๆ</button>
+          </div>
+          <div class="inline-group" style="margin-bottom:10px;width:100%;">
+            <input id="aiCustomPrompt" type="text" class="input" placeholder="อยากให้ AI ช่วยคิดโปรโมชั่นหรือตอบลูกค้าเรื่องอะไร พิมพ์ถามได้เลย..." />
+            <button type="button" class="btn btn-outline" onclick="generateAiMessage('CUSTOM')">ถาม AI</button>
+          </div>
+          <textarea id="aiGeneratedText" rows="6" class="input" style="height:auto;padding:12px;line-height:1.5;margin-bottom:10px;" readonly></textarea>
+          <button type="button" class="btn btn-emerald btn-block" onclick="copyAiText()">📋 คัดลอกข้อความไปวางใน LINE / Facebook</button>
+        </div>
+      </div>
+
+      <!-- MCP Server Integration Card for Connecting Other AIs -->
+      <div class="card" style="border:2px solid #818cf8;background:linear-gradient(180deg,#f5f3ff 0%,#ffffff 100%);">
+        <div class="card-header" style="flex-wrap:wrap;">
+          <div>
+            <div class="inline-group" style="margin-bottom:4px;">
+              <span class="badge badge-blue">🔌 Model Context Protocol (MCP Server)</span>
+              <span class="badge badge-gold">เชื่อมต่อ AI ตัวอื่นได้ทันที</span>
+            </div>
+            <h2 class="card-title">เชื่อมต่อระบบ MCP กับ AI ตัวอื่น (Claude Desktop, ChatGPT, Cursor, Gemini, Antigravity)</h2>
+            <p style="font-size:0.82rem;color:var(--text-secondary);margin-top:2px;">
+              ให้ AI ตัวโปรดของคุณเข้ามาดึงยอดขาย เช็คสต๊อกหลายหน่วยนับ เปิดบิลขาย หรือค้นหาข้อมูลธนาคาร/ตำบลในไทยผ่านมาตรฐาน MCP (`https://www.mysmebox.com/api/mcp` หรือ `node mcp-server.js`)
+            </p>
+          </div>
+          <button type="button" class="btn btn-sm btn-primary" onclick="copyMcpConfigJson()">📋 ก๊อปตั้งค่า MCP (JSON)</button>
+        </div>
+
+        <div class="inline-group" style="flex-wrap:wrap;margin-bottom:10px;">
+          <span style="font-size:0.8rem;font-weight:700;color:#4338ca;">ลองกดทดสอบเรียก MCP Tool สดๆ:</span>
+          <button type="button" class="btn btn-sm btn-outline" onclick="testMcpToolCall('mysmebox_get_overview')">1. ดึงภาพรวมทุกร้าน (get_overview)</button>
+          <button type="button" class="btn btn-sm btn-outline" onclick="testMcpToolCall('mysmebox_list_products')">2. ดูสต๊อกหลายหน่วยนับ (list_products)</button>
+          <button type="button" class="btn btn-sm btn-outline" onclick="testMcpToolCall('mysmebox_lookup_thai_master')">3. ค้นหาธนาคาร &amp; พิกัดตำบลไทย (lookup_thai_master)</button>
+          <button type="button" class="btn btn-sm btn-outline" onclick="testMcpToolCall('mysmebox_list_map_locations')">4. ดูพิกัดแผนที่ส่งของ (list_map_locations)</button>
+        </div>
+
+        <pre id="mcpOutputBox" style="background:#0f172a;color:#e2e8f0;padding:12px;border-radius:10px;font-size:0.78rem;overflow-x:auto;max-height:220px;">{
+  "mcpServers": {
+    "mysmebox": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "env": {
+        "MYSMEBOX_API_URL": "https://www.mysmebox.com/api/mcp",
+        "MYSMEBOX_USER_EMAIL": "owner.mysmebox@gmail.com"
+      }
+    }
+  }
+}</pre>
+      </div>
+    </section>
+
+    <!-- TAB 8: MULTI-SHOP & TEAM GMAIL RBAC (เปิดเพจเพิ่ม & กำหนดสิทธิ์ลูกน้องด้วย Gmail) -->
+    <section id="tab-team" class="tab-panel" aria-label="ระบบเปิดร้านค้าเพิ่มและกำหนดสิทธิ์ลูกน้องด้วย Gmail">
+      <div class="pos-layout">
+        <!-- Create New Shop & Switch Shops -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">🏪 เปิดเพจ / ร้านค้าใหม่เพิ่ม (1 บัญชีดูแลได้หลายร้าน)</h2>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:2px;">แม่ค้าที่มีหลายเพจหรือขายของหลายอย่าง แยกร้านค้าให้สต๊อกและบิลไม่ปนกันได้ทันที</p>
+            </div>
+            <span class="badge badge-gold">หลายร้านค้า</span>
+          </div>
+
+          <div id="multiShopCardsList" class="list-stack" style="margin-bottom:16px;"></div>
+
+          <div style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:12px;padding:14px;">
+            <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:10px;">+ เปิดร้านค้าหรือเพจใหม่ในบัญชี <span id="createShopOwnerLabel" style="color:var(--primary);">owner.mysmebox@gmail.com</span></h3>
+            <div class="form-group">
+              <label class="form-label" for="newShopName">ชื่อร้านค้า / ชื่อเพจใหม่</label>
+              <input id="newShopName" type="text" class="input" placeholder="เช่น เพจกระเป๋าแฟชั่นนำเข้า (สาขา 4)" />
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <div class="form-group">
+                <label class="form-label" for="newShopCategory">ขายสินค้าประเภทไหน</label>
+                <input id="newShopCategory" type="text" class="input" value="แม่ค้าออนไลน์ / แฟชั่น & ไลฟ์สด" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="newShopPromptPay">เบอร์พร้อมเพย์รับเงินของร้านนี้</label>
+                <input id="newShopPromptPay" type="text" class="input" value="089-999-8888" />
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <div class="form-group">
+                <label class="form-label" for="newShopBankSelect">ธนาคารหลักของร้าน (จากระบบกลาง)</label>
+                <select id="newShopBankSelect" class="select"></select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="newShopBankAcc">เลขบัญชีธนาคาร</label>
+                <input id="newShopBankAcc" type="text" class="input" value="123-4-56789-0" />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="createNewShop()">+ สร้างร้านค้าใหม่ทันที</button>
+          </div>
+        </div>
+
+        <!-- Team Gmail Collaboration & RBAC Permissions -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">👥 เพิ่มอีเมลลูกน้องช่วยงาน &amp; กำหนดสิทธิ์ (ป้องกันลูกน้องเห็นกำไร)</h2>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:2px;">ใส่อีเมล Gmail ของแอดมินตอบแชท คนแพ็กของ หรือนักบัญชี แล้วติ๊กเลือกได้ว่าจะให้เห็นเมนูไหนบ้าง</p>
+            </div>
+            <span class="badge badge-blue">กำหนดสิทธิ์ง่าย</span>
+          </div>
+
+          <div id="teamMembersList" class="list-stack" style="margin-bottom:16px;"></div>
+
+          <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:14px;">
+            <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:10px;color:#1e3a8a;">+ เพิ่มอีเมล Gmail ทีมงานเข้าร้านนี้</h3>
+            <div class="form-group">
+              <label class="form-label" for="newMemberEmail">อีเมล Google (Gmail) ของลูกน้อง/ทีมงาน</label>
+              <input id="newMemberEmail" type="email" class="input" placeholder="เช่น admin.chat@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newMemberRole">เลือกหน้าที่งาน (ระบบตั้งสิทธิ์เริ่มต้นให้ทันที)</label>
+              <select id="newMemberRole" class="select" onchange="onRolePresetChange(this.value)">
+                <option value="ADMIN_LIVE">แอดมินตอบแชท / ดูด CF / เปิดบิล (ไม่เห็นต้นทุนและกำไร)</option>
+                <option value="PACKER">คนแพ็กของ / ยิงบาร์โค้ดตัดสต๊อกอย่างเดียว</option>
+                <option value="ACCOUNTANT">ฝ่ายบัญชี / สำนักงานบัญชี (ดูรายจ่าย &amp; ภาษี)</option>
+                <option value="MANAGER">ผู้จัดการร้าน (ช่วยดูแลได้ทุกเมนู)</option>
+              </select>
+            </div>
+
+            <div style="font-size:0.82rem;font-weight:700;margin-bottom:6px;color:#1e40af;">ติ๊กเลือกสิทธิ์ที่อนุญาตให้ทำได้:</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px;font-size:0.82rem;">
+              <label class="inline-group"><input type="checkbox" id="permCanSell" checked /> เปิดบิลขาย / ดูดแชท</label>
+              <label class="inline-group"><input type="checkbox" id="permCanStock" /> เพิ่มสินค้า / ปรับสต๊อก</label>
+              <label class="inline-group"><input type="checkbox" id="permCanExpense" /> จดบิลรายจ่ายร้านค้า</label>
+              <label class="inline-group"><input type="checkbox" id="permCanViewProfit" /> ดูต้นทุนและกำไรสุทธิ</label>
+              <label class="inline-group"><input type="checkbox" id="permCanTax" /> ดูรายงานภาษี / โหลดไฟล์บัญชี</label>
+              <label class="inline-group"><input type="checkbox" id="permCanManageTeam" /> เพิ่ม/ลบทีมงานในร้าน</label>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block" onclick="addShopMember()">+ บันทึกสิทธิ์ทีมงาน</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SEO & GEO/AEO Reference Content (Citation-Ready Static HTML) -->
+  <section class="seo-overview" aria-label="ข้อมูลระบบบริหารร้านแม่ค้าออนไลน์และธุรกิจ SME">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">ทำไมแม่ค้าออนไลน์ &amp; SME ยุคใหม่ ถึงชอบใช้ MySMEBox?</h2>
+        <span class="badge badge-blue">ใช้ง่าย ข้อมูลพร้อมใช้ทันที</span>
+      </div>
+      <p style="font-size:0.92rem;color:var(--text-secondary);margin-bottom:14px;">
+        ปัญหาใหญ่ของแม่ค้าออนไลน์คือต้องคอยก๊อปที่อยู่ลูกค้าจากแชทไปพิมพ์ใหม่ สต๊อกขวด/แพ็ค/ลังตัดไม่ตรงกัน และไม่รู้ว่าหักค่าแอดค่าส่งแล้วเหลือกำไรกี่บาท <strong>MySMEBox</strong> จึงออกแบบให้ทุกอย่างพร้อมใช้งานทันทีตั้งแต่เปิดเว็บ มีทั้งปุ่ม <strong>DEMO ทดลองเล่นฟรีไม่ต้องล็อกอิน</strong> ข้อมูลธนาคารและตำบลทั่วไทยพร้อมแผนที่จุดส่งของฟรีในตัว
+      </p>
+
+      <!-- Comparison Table for Google Featured Snippet & AI Overviews -->
+      <div style="overflow-x:auto;margin-bottom:16px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.88rem;text-align:left;">
+          <thead>
+            <tr style="background:var(--bg-subtle);border-bottom:2px solid var(--border);">
+              <th style="padding:10px 12px;">สิ่งที่แม่ค้าออนไลน์ต้องทำทุกวัน</th>
+              <th style="padding:10px 12px;">จดสมุด / คิดเลขเอง</th>
+              <th style="padding:10px 12px;">โปรแกรมทั่วไปที่ต้องตั้งค่าเอง</th>
+              <th style="padding:10px 12px;color:var(--primary);">MySMEBox (พร้อมใช้ทันที + AI)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:10px 12px;font-weight:600;">ทดลองใช้งานก่อนตัดสินใจ</td>
+              <td style="padding:10px 12px;">ไม่มีระบบให้ดู</td>
+              <td style="padding:10px 12px;">บังคับสมัครสมาชิกและกรอกบัตรก่อน</td>
+              <td style="padding:10px 12px;font-weight:600;color:var(--emerald);">กดปุ่ม DEMO ลองเล่นดูสินค้า ร้านค้า และรายงานได้ทันทีไม่ต้องล็อกอิน</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:10px 12px;font-weight:600;">ข้อมูลธนาคาร &amp; จังหวัด-อำเภอ-ตำบล</td>
+              <td style="padding:10px 12px;">พิมพ์ผิดพิมพ์ถูก รหัสไปรษณีย์ตกหล่น</td>
+              <td style="padding:10px 12px;">ต้องไปนั่งเพิ่มรหัสธนาคารและที่อยู่เอง</td>
+              <td style="padding:10px 12px;font-weight:600;color:var(--emerald);">ดึงจากระบบกลางให้อัตโนมัติ (20 ธนาคาร + 77 จังหวัด 7,436 ตำบลพร้อมพิกัด)</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:10px 12px;font-weight:600;">ขายปลีก ขายแพ็ค และขายส่งยกลัง</td>
+              <td style="padding:10px 12px;">งงว่าของเหลือในสต๊อกกี่ชิ้นกันแน่</td>
+              <td style="padding:10px 12px;">ต้องแยกรหัสสินค้า สต๊อกไม่เชื่อมกัน</td>
+              <td style="padding:10px 12px;font-weight:600;color:var(--emerald);">เก็บสต๊อกที่หน่วยย่อยที่เดียว ผูกบาร์โค้ดและราคาแยกขวด/แพ็ค/ลังอัตโนมัติ</td>
+            </tr>
+            <tr>
+              <td style="padding:10px 12px;font-weight:600;">ดูตำแหน่งลูกค้า โกดัง &amp; จุดส่งของ</td>
+              <td style="padding:10px 12px;">ดูไม่ได้</td>
+              <td style="padding:10px 12px;">ต้องเสียค่า API แผนที่แพงๆ</td>
+              <td style="padding:10px 12px;font-weight:600;color:var(--emerald);">มีแผนที่ฟรีในตัว ปักหมุดลูกค้า โกดัง และติดตามสถานะจัดส่งพัสดุได้ทันที</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="card-title" style="margin-bottom:10px;">จุดเด่นที่ทำให้แม่ค้าออนไลน์ทำงานง่ายขึ้น 10 เท่า</h2>
+      <div class="pillars-cards">
+        <article class="pillar-card">
+          <h3>1. โหมด DEMO ไม่ต้องล็อกอิน</h3>
+          <p>กดปุ่มเดียวเข้าดูตัวอย่างร้านค้า สินค้า บิลขาย แผนที่ และรายงานกำไรครบถ้วน ลองเล่นได้ทุกหน้าจอทันที</p>
+        </article>
+        <article class="pillar-card">
+          <h3>2. ข้อมูลไทยพร้อมใช้จากระบบกลาง</h3>
+          <p>มีรายชื่อ 20 ธนาคารในไทย และ 77 จังหวัด 928 อำเภอ 7,436 ตำบล พร้อมรหัสไปรษณีย์และพิกัดแผนที่ให้เลือกใช้ทันที</p>
+        </article>
+        <article class="pillar-card">
+          <h3>3. สินค้าหลายหน่วยนับ &amp; บาร์โค้ด</h3>
+          <p>ตั้งราคาขายปลีก ขายแพ็ค และยกลังแยกกัน พร้อมยิงบาร์โค้ดตามหน่วยนับ ตัดสต๊อกรวมแม่นยำ 100%</p>
+        </article>
+        <article class="pillar-card">
+          <h3>4. แผนที่ลูกค้า โกดัง &amp; จุดส่งของฟรี</h3>
+          <p>ปักหมุดพิกัดลูกค้าประจำ โกดังเก็บสินค้า และดูสถานะพัสดุที่กำลังจัดส่งบนแผนที่แบบฟรีไม่มีค่าใช้จ่าย</p>
+        </article>
+        <article class="pillar-card">
+          <h3>5. ดูดแชทเปิดบิล &amp; เช็คยอด COD</h3>
+          <p>วางข้อความแชทลูกค้าให้ AI กรอกบิลให้อัตโนมัติ พิมพ์ใบปะหน้ากล่อง และเช็คยอดเงินโอน/COD ได้ในคลิกเดียว</p>
+        </article>
+        <article class="pillar-card">
+          <h3>6. ดูแลหลายเพจ &amp; กำหนดสิทธิ์ลูกน้อง</h3>
+          <p>1 บัญชี Gmail เปิดได้หลายร้านค้า ดูยอดรวมทุกเพจ และเพิ่มอีเมลแอดมินช่วยเปิดบิลโดยไม่เห็นกำไรของแม่ค้า</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- FAQ Section Matching JSON-LD FAQPage -->
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">คำถามที่พบบ่อย (FAQ)</h2>
+      </div>
+      <div class="list-stack">
+        <article class="list-row">
+          <div>
+            <h3 class="list-title">อยากลองเล่นระบบ MySMEBox ต้องสมัครสมาชิกหรือล็อกอินก่อนไหม?</h3>
+            <p class="list-sub">ไม่ต้องล็อกอินครับ สามารถกดปุ่ม "โหมด DEMO ทดลองเล่นฟรี" บนหน้าเว็บเพื่อลองกดขายสินค้า ดูรายการร้านค้าหลายสาขา ดูแผนที่จุดจัดส่ง และดูรายงานกำไร/ภาษีจากข้อมูลตัวอย่างครบชุดได้ทันที</p>
+          </div>
+        </article>
+        <article class="list-row">
+          <div>
+            <h3 class="list-title">ต้องเสียเวลาตั้งค่ารายชื่อธนาคารหรือจังหวัด-อำเภอ-ตำบลเองไหม?</h3>
+            <p class="list-sub">ไม่ต้องตั้งค่าเองเลยครับ MySMEBox เตรียมข้อมูลถาวรไว้ให้ในระบบกลางเรียบร้อยแล้ว ทั้งรายชื่อ 20 ธนาคารในไทยพร้อมโลโก้ และข้อมูล 77 จังหวัด 928 อำเภอ 7,436 ตำบลทั่วไทยพร้อมรหัสไปรษณีย์และพิกัดแผนที่ GPS เลือกใช้งานได้ทันที</p>
+          </div>
+        </article>
+        <article class="list-row">
+          <div>
+            <h3 class="list-title">แม่ค้าออนไลน์ที่ขายทั้งปลีก แพ็คคู่ และยกลังให้ตัวแทน ระบบตัดสต๊อกยังไง?</h3>
+            <p class="list-sub">ระบบเก็บสต๊อกรวมไว้ที่หน่วยย่อยที่สุด (เช่น ขวด) ที่เดียว แต่แม่ค้าตั้งปุ่มขายและบาร์โค้ดแยกตามหน่วยนับได้ เช่น ขาย 1 แพ็ค (ตัดสต๊อก 3 ขวดอัตโนมัติ) หรือขาย 1 ลัง (ตัดสต๊อก 12 ขวดอัตโนมัติ) ทำให้สต๊อกแม่นยำไม่มั่ว</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align:center;padding:20px 16px;color:var(--text-muted);font-size:0.82rem;border-top:1px solid var(--border);background:#ffffff;">
+    <p>&copy; 2026 <strong>MySMEBox</strong> (<a href="https://www.mysmebox.com" style="color:var(--primary);text-decoration:none;">www.mysmebox.com</a>) — Open Source (<a href="https://github.com/jaturapornchai/mysmebox" target="_blank" rel="noopener" style="color:var(--primary);">GitHub</a>) ระบบบริหารร้านแม่ค้าออนไลน์ &amp; SME · <a href="/llms.txt" style="color:var(--text-muted);">LLMs.txt</a> · <a href="/sitemap.xml" style="color:var(--text-muted);">Sitemap</a></p>
+  </footer>
+
+  <!-- Google Login / Gmail Account Switcher Modal -->
+  <div id="googleLoginModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="googleLoginTitle">
+    <div class="modal-box">
+      <div class="row-baseline" style="margin-bottom:12px;">
+        <h3 id="googleLoginTitle" style="font-size:1.05rem;font-weight:800;">🔑 เข้าสู่ระบบด้วย Google (หรือเลือกโหมด DEMO)</h3>
+        <button type="button" class="btn btn-sm btn-outline" onclick="closeGoogleLoginModal()">✕ ปิด</button>
+      </div>
+      <p style="font-size:0.84rem;color:var(--text-secondary);margin-bottom:12px;">
+        สามารถกดปุ่มโหมด DEMO เพื่อลองเล่นโดยไม่ต้องล็อกอิน หรือล็อกอินด้วยอีเมล Gmail เพื่อสร้างร้านค้าของคุณเอง:
+      </p>
+
+      <button type="button" class="btn btn-emerald btn-block" style="margin-bottom:14px;" onclick="closeGoogleLoginModal(); enterDemoMode(false);">
+        🚀 เข้าโหมด DEMO ทันที (ไม่ต้องใช้รหัสผ่าน / ไม่ต้อง Login)
+      </button>
+
+      <div class="form-group">
+        <label class="form-label" for="loginEmailInput">อีเมล Google (Gmail)</label>
+        <input id="loginEmailInput" type="email" class="input" value="owner.mysmebox@gmail.com" placeholder="yourname@gmail.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="loginNameInput">ชื่อเรียกของคุณ</label>
+        <input id="loginNameInput" type="text" class="input" value="แม่ค้าออนไลน์ (เจ้าของร้าน)" placeholder="ชื่อของคุณ" />
+      </div>
+      <button type="button" class="btn btn-primary btn-block" onclick="submitGoogleLogin()">
+        🔑 เข้าสู่ระบบด้วย Gmail นี้
+      </button>
+
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border);">
+        <div style="font-size:0.78rem;font-weight:700;color:var(--text-muted);margin-bottom:8px;">กดสลับมุมมองทดสอบสิทธิ์ลูกน้องในร้าน (ไม่ต้องพิมพ์เอง):</div>
+        <div class="list-stack">
+          <button type="button" class="btn btn-sm btn-outline" style="justify-content:space-between;" onclick="quickSwitchGmail('owner.mysmebox@gmail.com', 'เจ้าของร้าน (ดูได้ทุกหน้าจอ)')">
+            <span>👑 เจ้าของร้าน (owner.mysmebox@gmail.com)</span>
+            <span class="badge badge-gold">เห็นครบทุกเมนู</span>
+          </button>
+          <button type="button" class="btn btn-sm btn-outline" style="justify-content:space-between;" onclick="quickSwitchGmail('admin.live@gmail.com', 'น้องแอดมินตอบแชท/ดูด CF')">
+            <span>💬 แอดมินตอบแชท (admin.live@gmail.com)</span>
+            <span class="badge badge-blue">เปิดบิลได้อย่างเดียว</span>
+          </button>
+          <button type="button" class="btn btn-sm btn-outline" style="justify-content:space-between;" onclick="quickSwitchGmail('packer.team@gmail.com', 'ฝ่ายแพ็กของหน้าโกดัง')">
+            <span>📦 คนแพ็กของ (packer.team@gmail.com)</span>
+            <span class="badge badge-amber">ตัดสต๊อกอย่างเดียว</span>
+          </button>
+          <button type="button" class="btn btn-sm btn-outline" style="justify-content:space-between;" onclick="quickSwitchGmail('accounting.sme@gmail.com', 'สำนักงานบัญชี')">
+            <span>📊 ฝ่ายบัญชี (accounting.sme@gmail.com)</span>
+            <span class="badge badge-green">ดูงบ/ภาษีอย่างเดียว</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bill / QR PromptPay / Shipping Label Modal -->
+  <div id="billModalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalDocTitle">
+    <div class="modal-box">
+      <div class="row-baseline" style="margin-bottom:10px;">
+        <h3 id="modalDocTitle" style="font-size:1.05rem;font-weight:800;">ใบเสร็จรับเงิน / ใบปะหน้ากล่อง</h3>
+        <button type="button" class="btn btn-sm btn-outline" onclick="closeBillModal()">✕ ปิด</button>
+      </div>
+
+      <div style="background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);padding:10px 12px;margin-bottom:10px;font-size:0.85rem;">
+        <div><strong>ผู้รับ (ลูกค้า):</strong> <span id="modalCustomer"></span></div>
+        <div style="margin-top:4px;"><strong>ที่อยู่ใบปะหน้าจัดส่ง:</strong> <span id="modalAddress"></span></div>
+      </div>
+
+      <div id="modalItems" style="margin-bottom:10px;"></div>
+
+      <div class="row-baseline" style="font-size:1.1rem;padding:8px 0;">
+        <strong>ยอดชำระสุทธิ</strong>
+        <strong id="modalGrandTotal" style="color:var(--primary);">฿0.00</strong>
+      </div>
+
+      <div class="qr-frame">
+        <div style="font-size:0.82rem;font-weight:700;color:#1e40af;">สแกนจ่ายด้วย QR พร้อมเพย์ / โอนเข้าธนาคารร้าน</div>
+        <div class="qr-grid-box">
+          <span class="qr-center-pill">PromptPay</span>
+        </div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);">พร้อมเพย์: <strong id="modalPromptPay">089-999-8888</strong></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <button type="button" class="btn btn-primary" onclick="copyBillSummaryForLine()">📋 ก๊อปบิลส่งแชทลูกค้า</button>
+        <button type="button" class="btn btn-outline" onclick="window.print()">🖨 พิมพ์ใบปะหน้ากล่อง</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="appToast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Fixed Bottom Navigation Bar for Mobile Thumb UX -->
+  <nav class="bottom-nav" aria-label="แถบเมนูด้านล่างสำหรับมือถือ">
+    <button type="button" class="nav-item active" data-tab-target="dashboard" onclick="switchTab('dashboard')">
+      <span class="nav-icon">📊</span>
+      <span>ภาพรวม</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="pos" onclick="switchTab('pos')">
+      <span class="nav-icon">⚡</span>
+      <span>เปิดบิล</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="docs" onclick="switchTab('docs')">
+      <span class="nav-icon">🧾</span>
+      <span>บิล/COD</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="stock" onclick="switchTab('stock')">
+      <span class="nav-icon">📦</span>
+      <span>สต๊อก</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="map" onclick="switchTab('map')">
+      <span class="nav-icon">🗺️</span>
+      <span>แผนที่</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="expense" onclick="switchTab('expense')">
+      <span class="nav-icon">📸</span>
+      <span>รายจ่าย</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="tax" onclick="switchTab('tax')">
+      <span class="nav-icon">🤖</span>
+      <span>กำไร/AI</span>
+    </button>
+    <button type="button" class="nav-item" data-tab-target="team" onclick="switchTab('team')">
+      <span class="nav-icon">👥</span>
+      <span>ร้าน/ทีม</span>
+    </button>
+  </nav>
+
+  <script src="/leaflet/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
