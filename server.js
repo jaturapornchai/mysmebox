@@ -1352,7 +1352,7 @@ const server = http.createServer(async (req, res) => {
 
   try {
     // 1. สถานะระบบ + ข้อมูลส่วนกลาง
-    if (req.method === "GET" && pathname === "/api/ai/status") {
+    if (req.method === "GET" && (pathname === "/api/ai/status" || pathname === "/api/health")) {
       return sendJson(res, 200, {
         ok: true,
         provider: "Ollama Cloud",
@@ -1360,6 +1360,7 @@ const server = http.createServer(async (req, res) => {
         availableModels: ALLOWED_MODELS,
         database: "PostgreSQL (mysmebox)",
         storage: minioClient ? `MinIO (${MINIO_BUCKET})` : "Local Fallback",
+        mcpEndpoint: "/api/mcp",
         centralMaster: {
           banks: THAI_BANKS_MASTER.length,
           provinces: THAI_GEO.totalProvinces,
