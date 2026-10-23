@@ -6,3 +6,4 @@ node_modules/
 *.key
 credentials*.json
 AGENTS.md
+test/e2e/screens/

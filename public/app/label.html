@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ใบปะหน้าพัสดุ — MySMEBox</title>
+  <style>
+    @page { size: 100mm 150mm; margin: 0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI", system-ui, sans-serif; color: #000; background: #e5e7eb; }
+    .bar { position: sticky; top: 0; display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: #1e3a8a; color: #fff; }
+    .bar button { min-height: 44px; padding: 0 20px; border: 0; border-radius: 10px; background: #f59e0b; color: #111; font: inherit; font-weight: 700; cursor: pointer; }
+    .bar span { flex: 1; }
+    .sheet { width: 100mm; height: 150mm; margin: 16px auto; padding: 4mm; background: #fff; display: flex; flex-direction: column; gap: 2.5mm; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.15); }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 2mm; }
+    .box { border: .4mm solid #000; border-radius: 1.5mm; padding: 2mm 2.5mm; }
+    .lbl { font-size: 8pt; font-weight: 700; letter-spacing: .3px; }
+    .from { font-size: 8.5pt; line-height: 1.35; }
+    .to-name { font-size: 15pt; font-weight: 800; line-height: 1.2; }
+    .to-phone { font-size: 12pt; font-weight: 700; }
+    .to-addr { font-size: 10.5pt; line-height: 1.35; }
+    .zip { font-size: 20pt; font-weight: 800; letter-spacing: 2px; }
+    .cod { border: .8mm solid #000; background: #000; color: #fff; text-align: center; padding: 2mm; border-radius: 1.5mm; }
+    .cod b { display: block; font-size: 22pt; line-height: 1.1; }
+    .cod span { font-size: 11pt; font-weight: 700; }
+    .paid { border: .5mm dashed #000; text-align: center; padding: 1.5mm; font-weight: 800; font-size: 12pt; border-radius: 1.5mm; }
+    .bill { font-size: 12pt; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .meta { font-size: 8.5pt; }
+    .items { font-size: 8pt; line-height: 1.3; margin: 0; padding-left: 4mm; flex: 1; overflow: hidden; }
+    .msg { padding: 40px; text-align: center; }
+    @media print {
+      body { background: #fff; }
+      .bar { display: none; }
+      .sheet { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar"><span>ใบปะหน้าพัสดุ 100×150 มม.</span><button type="button" id="print">พิมพ์</button></div>
+  <div id="out"><p class="msg">กำลังโหลด…</p></div>
+  <script type="module" src="/app/label.js"></script>
+</body>
+</html>

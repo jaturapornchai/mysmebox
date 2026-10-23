@@ -1,13 +1,17 @@
 {
   "name": "mysmebox",
   "version": "1.0.0",
-  "description": "MySMEBox — แพลตฟอร์ม SaaS บริหารธุรกิจหลายร้านค้า & แม่ค้าออนไลน์ (PostgreSQL + MinIO + Google Login + Ollama Cloud AI)",
-  "main": "server.js",
+  "private": true,
+  "description": "MySMEBox v1 — ระบบจัดการร้านสำหรับแม่ค้าออนไลน์ (PostgreSQL + MinIO + Google Login + Ollama Cloud AI)",
+  "main": "src/server.js",
+  "engines": { "node": ">=20" },
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
   },
   "dependencies": {
     "minio": "^8.0.0",
-    "pg": "^8.13.0"
+    "pg": "^8.13.0",
+    "qrcode": "^1.5.4"
   }
 }

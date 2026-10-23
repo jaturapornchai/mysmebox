@@ -1,0 +1,19 @@
+{
+  "name": "MySMEBox — แอปเปิดออเดอร์สำหรับแม่ค้าออนไลน์",
+  "short_name": "MySMEBox",
+  "description": "เปิดออเดอร์ไว ขายหลายหน่วย ตัดสต๊อกเอง QR พร้อมเพย์ เก็บเงินปลายทาง พิมพ์ใบปะหน้า รู้กำไรทุกบิล",
+  "start_url": "/app/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f3f5fa",
+  "theme_color": "#1e3a8a",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "/logo.webp",
+      "sizes": "256x256",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

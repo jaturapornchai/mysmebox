@@ -1,40 +1,56 @@
 User-agent: *
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /app/
+Disallow: /api/
 
 User-agent: Applebot-Extended
 Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: CCBot
-Allow: /
+Disallow: /app/
+Disallow: /api/
 
 Sitemap: https://www.mysmebox.com/sitemap.xml
